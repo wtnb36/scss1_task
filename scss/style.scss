@@ -1,0 +1,278 @@
+@import "../scss/variables/_style_variables.scss";
+@import "../scss/components/_hamburger_menu.scss";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  max-width:980px;
+}
+
+header{
+  display:flex;
+  margin-bottom:$margin;
+
+  .hamburger_menu{
+    display:none;
+  }
+
+  ul{
+    display:flex;
+    list-style:none;
+    margin:auto;
+
+    li{
+      margin:$margin;
+      font-size:$font-m;
+
+      &:hover{
+        color:blue;
+        text-decoration:underline;
+      }
+    }
+  }
+}
+
+.current_location{
+  display:flex;
+  padding:0 30px;
+
+  div:nth-child(even){
+    margin: 0 $margin;
+  }
+
+  p{
+    font-size:$font-s;
+  }
+}
+
+.main_visual{
+  padding:0 30px;
+  margin:$margin 0;
+  img{
+    object-fit:cover;
+    width:90%;
+    height:500px;
+    margin:0 auto;
+  }
+}
+
+.main_contents{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  justify-content:center;
+  margin:$margin 0;
+
+  &_content{
+    width:25%;
+
+    &_name{
+      font-size:$font-l;
+      text-align:right;
+    }
+
+    &_price{
+      font-size:$font-m;
+      text-align:right;
+    }
+  }
+
+  img{
+    object-fit:cover;
+  }
+}
+
+.links{
+  display:flex;
+  flex-wrap:wrap;
+  margin:$margin 0;
+  &_link{
+    width:50%;
+    text-align:center;
+    margin:1.5rem 0;
+    font-size:$font-m;
+
+    p{
+      width:50%;
+      background-color:blue;
+      text-align:center;
+      margin:0 auto;
+      height:2rem;
+      line-height:2rem;
+      color:white;
+      border:solid 1px black;
+      border-radius:25px;
+    }
+
+    i{
+      margin-left:1rem;
+    }
+  }
+
+  &_link:last-child{
+    width:100%;
+  }
+}
+
+.access{
+  display:flex;
+  margin:$margin auto;
+  width:100%;
+  padding:0 30px;
+
+  &_map{
+    margin-right:$margin;
+    width:50%;
+    text-align:center;
+  }
+
+  &_shop{
+    display:block;
+    width:50%;
+
+    &_name{
+      font-size:$font-l;
+      height:100px;
+    }
+
+    &_detail{
+      height:100px;
+      font-size:$font-m;
+
+      &_link{
+        height:100px;
+        text-align:right;
+        padding:0 50px;
+        font-size:$font-s;
+        line-height:150px;
+      }
+    }
+  }
+}
+
+.footer_menu{
+  display:flex;
+
+  img{
+    margin-right:50px;
+  }
+
+  &_content{
+    justify-content:space-between;
+    width:30%;
+    margin:auto 0;
+
+    p{
+      font-size:$font-l;
+    }
+  }
+
+  &_content_category{
+    list-style:none;
+
+    &_item{
+      margin-top:1rem;
+      font-size:$font-m;
+    }
+  }
+}
+
+.footer_menu_bottom{
+  display:flex;
+  justify-content:center;
+  margin:$margin auto;
+
+  & div{
+    margin:0 $margin;
+  }
+}
+
+@media screen and(max-width:600px){
+
+  .main_contents_content_name, .access_shop_name p, .footer_menu_bottom p{
+    font-size:$font-rl;
+  }
+
+  .main_contents_content_price, .links_link p, .access_shop_detail p{
+    font-size:$font-rm;
+  }
+
+  .current_location p, .access_shop_detail_link p{
+    font-size:$font-rs;
+  }
+
+  .main_contents{
+    display:block;
+
+    &_content{
+      width:80%;
+      margin:3rem auto;
+
+      img{
+        height:400px;
+      }
+    }
+  }
+
+  .links{
+    display:block;
+
+    &_link{
+      width:100%;
+      margin:3rem auto;
+
+      p{
+        height:4rem;
+        line-height:4rem;
+      }
+    }
+  }
+
+  .access{
+    display:block;
+
+    &_map{
+      width:100%;
+
+      iframe{
+        width:100%;
+        height:500px;
+      }
+    }
+
+    &_shop{
+      width:80%;
+      margin:3rem auto;
+    }
+  }
+
+  .footer_menu{
+    display:none;
+  }
+
+  .footer_menu_bottom{
+    display:block;
+
+    div{
+      margin:3rem auto;
+      text-align:center;
+    }
+  }
+
+  .header_menu{
+    display:none;
+  }
+
+  header .hamburger_menu{
+    display:block;
+    @include hamburger_menu;
+  }
+}
+
+
+
+

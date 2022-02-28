@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/slick-theme.css" >
+  <link  rel="stylesheet" href="css/slick.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <title>sass課題</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo .png">
+    <ul class="header_menu">
+      <li class="header_menu_item">
+        お好み焼き
+      </li>
+      <li class="header_menu_item">
+        もんじゃ
+      </li>
+      <li class="header_menu_item">
+        一品もの
+      </li>
+      <li class="header_menu_item">
+        ドリンク
+      </li>
+    </ul>
+    <div class="hamburger_menu">
+      <input type="checkbox" id="hamburger_menu_btn_check">
+      <label for="hamburger_menu_btn_check" class="hamburger_menu_btn"><span></span></label>
+      <div class="hamburger_menu_content">
+        <ul>
+          <li>
+            <a>お好み焼き</a>
+          </li>
+          <li>
+            <a>もんじゃ</a>
+          </li>
+          <li>
+            <a>一品もの</a>
+          </li>
+          <li>
+            <a>ドリンク</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="current_location">
+      <div>
+        <p>ホーム</p>
+      </div>
+      <div>
+        <p>＞</p>
+      </div>
+      <div>
+        <p>メニュー</p>
+      </div>
+    </div>
+    <div class="main_visual">
+      <ul class="main_visual_slider">
+        <li><img src="img/main1.jpg"></li>
+        <li><img src="img/main2.jpg"></li>
+        <li><img src="img/main3.jpg"></li>
+      </ul>
+    </div>
+    <div class="main_contents">
+      <div class="main_contents_content">
+        <img src="img/main1.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">お好み焼き</p>
+        <p class="main_contents_content_price">￥1000</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main1.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">お好み焼き</p>
+        <p class="main_contents_content_price">￥1000</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main1.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">お好み焼き</p>
+        <p class="main_contents_content_price">￥1000</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main2.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">もんじゃ</p>
+        <p class="main_contents_content_price">￥750</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main2.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">もんじゃ</p>
+        <p class="main_contents_content_price">￥750</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main2.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">もんじゃ</p>
+        <p class="main_contents_content_price">￥750</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main3.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">おつまみ</p>
+        <p class="main_contents_content_price">￥500</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main3.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">おつまみ</p>
+        <p class="main_contents_content_price">￥500</p>
+      </div>
+      <div class="main_contents_content">
+        <img src="img/main3.jpg" width="100%" height="200px">
+        <p class="main_contents_content_name">おつまみ</p>
+        <p class="main_contents_content_price">￥500</p>
+      </div>
+    </div>
+    <div class="links">
+      <div class="links_link">
+        <p>リンク項目<a></a><i class="fa-solid fa-angle-right"></i></p>
+      </div>
+      <div class="links_link">
+        <p>リンク項目<a></a><i class="fa-solid fa-angle-right"></i></p>
+      </div>
+      <div class="links_link">
+        <p>リンク項目<a></a><i class="fa-regular fa-file-pdf"></i><i class="fa-solid fa-angle-right"></i></p>
+      </div>
+      <div class="links_link">
+        <p>リンク項目<a></a><i class="fa-regular fa-file-pdf"></i><i class="fa-solid fa-angle-right"></i></p>
+      </div>
+      <div class="links_link">
+        <p>リンク項目<a></a><i class="fa-regular fa-copy"></i><i class="fa-solid fa-angle-right"></i></p>
+      </div>
+    </div>
+    <div class="access">
+      <div class="access_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.962531041259!2d139.73225211559404!3d35.67792458019508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c7dd5928b1f%3A0x7817b82a0d541edd!2z44Kq44OW44K444Kn44Kv44OG44Kj44OW44Kz44O844OJ!5e0!3m2!1sja!2sjp!4v1638258997215!5m2!1sja!2sjp"
+          width=80% height=300px style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <div class="access_shop">
+        <div class="access_shop_name">
+          <p>もんじゃ</p>
+        </div>
+        <div class="access_shop_detail">
+          <p>月島もんじゃおいしい</p>
+        </div>
+        <div class="access_shop_detail_link">
+          <p><i class="fa-solid fa-angle-right"></i>もっと詳しく見る</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_menu">
+      <img src="img/logo .png">
+      <div class="footer_menu_content">
+        <p>カテゴリー</p>
+        <ul class="footer_menu_content_category">
+          <li class="footer_menu_content_category_item">メニュー</li>
+          <li class="footer_menu_content_category_item">メニュー</li>
+        </ul>
+      </div>
+      <div class="footer_menu_content">
+        <p>カテゴリー</p>
+        <ul class="footer_menu_content_category">
+          <li class="footer_menu_content_category_item">メニュー</li>
+          <li class="footer_menu_content_category_item">メニュー</li>
+        </ul>
+      </div>
+      <div class="footer_menu_content">
+        <p>カテゴリー</p>
+        <ul class="footer_menu_content_category">
+          <li class="footer_menu_content_category_item">メニュー</li>
+          <li class="footer_menu_content_category_item">メニュー</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_menu_bottom">
+      <div class="footer_menu_bottom_before_using">
+        <p>ご利用にあたって</p>
+      </div>
+      <div class="footer_menu_bottom_questions">
+        <p>よくある質問</p>
+      </div>
+      <div class="footer_menu_bottom_privacy">
+        <p>プライバシーポリシー</p>
+      </div>
+      <div class="footer_menu_bottom_unquiry">
+        <p>お問い合わせ</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/slider.js"></script>
+</body>
+
+ここまで5時間
