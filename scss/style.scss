@@ -9,6 +9,7 @@
 
 html{
   max-width:980px;
+  margin:0 auto;
 }
 
 header{
@@ -165,6 +166,7 @@ header{
     justify-content:space-between;
     width:30%;
     margin:auto 0;
+    text-align:center;
 
     p{
       font-size:$font-l;
@@ -273,6 +275,21 @@ header{
   }
 }
 
+@media screen and(max-width:400px){
+  .footer_menu_bottom div p{
+    font-size:$font-rs;
+  }
 
+  .main_visual img, .access_map iframe{
+    height:300px;
+  }
+  .main_contents_content img{
+    height:250px;
+  }
 
-
+  .access_shop_detail_link{
+    line-height:2rem;
+    text-align:left;
+    padding:0;
+  }
+}
